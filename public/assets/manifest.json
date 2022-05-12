@@ -1,6 +1,6 @@
 {
-  "name": "NextJS Boilerplate",
-  "short_name": "Boilerplate",
+  "name": "Raptor",
+  "short_name": "Raptor",
   "icons": [
     {
       "src": "/img/icon-192.png",
@@ -14,7 +14,7 @@
     }
   ],
   "background_color": "#06092B",
-  "description": "Boilerplate utilizando Typescript, React, NextJS e Styled Components!",
+  "description": "",
   "display": "fullscreen",
   "start_url": "/",
   "theme_color": "#06092B"

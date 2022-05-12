@@ -1,25 +1,21 @@
-import type { AppProps } from 'next/app'
-import Head from 'next/head'
+import { CSSReset } from '@chakra-ui/react'
+import { AppProps } from 'next/app'
 
-import GlobalStyles from 'styles/global'
+import Layout from 'components/Layout'
+import MainContainer from 'components/Layout/MainContainer'
 
-function App({ Component, pageProps }: AppProps) {
+const App = ({ Component, pageProps }: AppProps) => {
   return (
-    <>
-      <Head>
-        <title>NextJS Boilerplate</title>
-        <link rel="shortcut icon" href="/assets/img/icon-2.png" />
-        <link rel="apple-touch-icon" href="/assets/img/icon-2.png" />
-        <link rel="manifest" href="/manifest.json" />
-        <meta
-          name="description"
-          content="A TypeScript + Next.js boilerplate that includes all you need to build fantastic projects."
-        />
-      </Head>
-      <GlobalStyles />
-      <Component {...pageProps} />
-    </>
+    <MainContainer cookies={pageProps.cookies}>
+      <CSSReset />
+
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </MainContainer>
   )
 }
+
+export { getServerSideProps } from 'components/Layout/MainContainer'
 
 export default App

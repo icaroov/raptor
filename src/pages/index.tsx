@@ -1,7 +1,6 @@
-import { NextPage } from 'next'
 import Main from 'components/Main'
 
-const Home: NextPage = () => {
+const Home = () => {
   return <Main />
 }
 
