@@ -14,9 +14,7 @@ type MainContainerProps = {
 
 const MainContainer = ({ cookies, children }: MainContainerProps) => {
   const colorModeManager =
-    typeof cookies === 'string'
-      ? cookieStorageManager(cookies)
-      : localStorageManager
+    typeof cookies === 'string' ? cookieStorageManager : localStorageManager
 
   return (
     <ChakraProvider theme={theme} colorModeManager={colorModeManager}>
