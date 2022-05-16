@@ -3,7 +3,7 @@ import { Box } from '@chakra-ui/react'
 const Main = () => {
   return (
     <Box>
-      <h1>Main Component</h1>
+      <h1>Main Content</h1>
     </Box>
   )
 }
