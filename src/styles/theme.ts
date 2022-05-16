@@ -5,6 +5,8 @@ import '@fontsource/open-sans/400.css'
 import '@fontsource/open-sans/600.css'
 import '@fontsource/open-sans/700.css'
 
+import { Button } from './custom-button'
+
 const config: ThemeConfig = {
   initialColorMode: 'dark',
   useSystemColorMode: false
@@ -50,6 +52,9 @@ const theme = extendTheme({
       pink: '#ff79c6',
       purple: '#bd93f9'
     }
+  },
+  components: {
+    Button
   }
 })
 
